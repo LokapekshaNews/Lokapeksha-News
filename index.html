@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Lokapeksha News E-Paper</title>
 
 <style>
@@ -40,18 +41,28 @@ header p {
   display: inline-block;
   background: #e53935;
   color: white;
-  padding: 12px 22px;
+  padding: 13px 22px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   margin: 10px;
 }
 
-iframe {
+.paper {
   width: 100%;
   height: 80vh;
-  border: 1px solid #ccc;
   background: white;
+  border: 1px solid #ccc;
+}
+
+.paper object {
+  width: 100%;
+  height: 100%;
+}
+
+.note {
+  padding: 15px;
+  font-size: 15px;
 }
 </style>
 </head>
@@ -66,14 +77,29 @@ iframe {
 <div class="container">
 
   <a class="download"
-     href="Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
+     href="./Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
      target="_blank">
-     📥 E-Paper PDF उघडा / Download करा
+     📖 E-Paper उघडा
   </a>
 
-  <iframe
-    src="Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf">
-  </iframe>
+  <a class="download"
+     href="./Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
+     download>
+     📥 PDF Download करा
+  </a>
+
+  <div class="paper">
+    <object
+      data="./Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
+      type="application/pdf">
+      
+      <div class="note">
+        PDF इथे दिसत नसल्यास वरचे
+        <b>“E-Paper उघडा”</b> बटन दाबा.
+      </div>
+
+    </object>
+  </div>
 
 </div>
 
