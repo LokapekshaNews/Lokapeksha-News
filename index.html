@@ -37,3 +37,11 @@ header { background:#111; color:white; text-align:center; padding:20px 10px; }
 <meta name="description" content="Lokapeksha News Nanded E-Paper - Roz cha taja Marathi paper online vacha. Aajcha Nanded cha e-paper PDF.">
 <meta name="keywords" content="Lokapeksha News, Nanded e-paper, Nanded news, Lokapeksha e-paper, today's Nanded newspaper">
 <meta name="google-site-verification" content="PASTE_KARAYCHA_CODE">
+<!-- Junie line -->
+<iframe src="./paper.pdf#toolbar=0&view=FitH"></iframe>
+
+<!-- Yachya jagi hi naveen line taka -->
+<iframe id="paperFrame"></iframe>
+<script>
+  document.getElementById('paperFrame').src = "./paper.pdf?v=" + new Date().getTime() + "#toolbar=0&view=FitH";
+</script>
