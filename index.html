@@ -3,105 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Lokapeksha News E-Paper</title>
-
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f3f3f3;
-  color: #222;
-}
-
-header {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 30px;
-}
-
-header p {
-  margin: 8px 0 0;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 15px;
-  text-align: center;
-}
-
-.download {
-  display: inline-block;
-  background: #e53935;
-  color: white;
-  padding: 13px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.paper {
-  width: 100%;
-  height: 80vh;
-  background: white;
-  border: 1px solid #ccc;
-}
-
-.paper object {
-  width: 100%;
-  height: 100%;
-}
-
-.note {
-  padding: 15px;
-  font-size: 15px;
-}
+body { margin:0; font-family: Arial; background:#f3f3f3; }
+header { background:#111; color:white; text-align:center; padding:20px 10px; }
+.container { max-width:1100px; margin:auto; padding:15px; text-align:center; }
+.download { display:inline-block; background:#e53935; color:white; padding:13px 22px; border-radius:6px; text-decoration:none; font-weight:bold; margin:10px; }
+.paper { width:100%; height:85vh; background:white; border:1px solid #ccc; }
+.paper iframe { width:100%; height:100%; border:0; }
+.note { padding:15px; }
 </style>
 </head>
-
 <body>
-
 <header>
   <h1>लोकपेक्षा न्यूज</h1>
   <p>Lokapeksha News E-Paper - Nanded</p>
 </header>
-
 <div class="container">
-
-  <a class="download"
-     href="./Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
-     target="_blank">
-     📖 E-Paper उघडा
-  </a>
-
-  <a class="download"
-     href="./Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
-     download>
-     📥 PDF Download करा
-  </a>
+  <a class="download" href="./paper.pdf" target="_blank">📖 E-Paper उघडा</a>
+  <a class="download" href="./paper.pdf" download>📥 PDF Download करा</a>
 
   <div class="paper">
-    <object
-      data="./Lokapeksha%2028%20AUG%202026-2_260828_120548.pdf"
-      type="application/pdf">
-      
-      <div class="note">
-        PDF इथे दिसत नसल्यास वरचे
-        <b>“E-Paper उघडा”</b> बटन दाबा.
-      </div>
-
-    </object>
+    <!-- Mobile var 100% chalnara viewer -->
+    <iframe src="./paper.pdf#toolbar=0&view=FitH"></iframe>
   </div>
 
+  <div class="note">
+    PDF इथे दिसत नसल्यास वरचे “E-Paper उघडा” बटन दाबा. Chrome madhe ughda.
+  </div>
 </div>
-
 </body>
 </html>
